@@ -21,7 +21,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
@@ -60,7 +60,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>408 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>398 258 918 512 0 0 1440 877 </string>
+	<string>450 271 918 498 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1436 877 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_B02B9BDF-73A4-4354-9442-4E990805DD07</key>
@@ -645,6 +645,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Thin Strokes</key>
+			<integer>2</integer>
 			<key>Transparency</key>
 			<real>0.21106231508875742</real>
 			<key>Unlimited Scrollback</key>
@@ -723,7 +725,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-02T21:10:11Z</date>
+	<date>2017-04-05T02:50:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
