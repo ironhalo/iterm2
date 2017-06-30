@@ -60,7 +60,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>408 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>450 271 918 498 0 0 1440 877 </string>
+	<string>457 271 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1436 877 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_B02B9BDF-73A4-4354-9442-4E990805DD07</key>
@@ -650,7 +650,7 @@
 			<key>Transparency</key>
 			<real>0.21106231508875742</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -725,7 +725,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-05T02:50:02Z</date>
+	<date>2017-06-30T03:10:32Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
