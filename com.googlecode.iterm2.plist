@@ -22,6 +22,8 @@
 	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
@@ -38,8 +40,14 @@
 	<true/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Downloads</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -81,22 +89,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>618 275 800 388 0 0 1680 1027 </string>
-	<key>NSWindow Frame ProfilesPanel</key>
-	<string>945 645 735 382 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
-	<key>NSWindow Frame SessionsPreferences</key>
-	<string>657 392 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>368 374 796 486 0 0 1680 1027 </string>
-	<key>NSWindow Frame UKCrashReporter</key>
-	<string>127 443 592 584 0 0 1680 1027 </string>
+	<string>269 109 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1085 1050 3840 2137 -1085 1050 3840 2137 </string>
+	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-839 1610 652 465 -839 1050 3360 1867 </string>
+	<string>948 605 572 422 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -688,6 +688,52 @@
 				<array>
 					<dict>
 						<key>class</key>
+						<string>iTermStatusBarRPCProvidedTextComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.63</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.90000000000000002</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
+							</dict>
+							<key>registration request</key>
+							<data>
+							Cg5hd3N1bWVfcHJvZmls
+							ZRIHCgVrbm9icxIJCgdw
+							cm9maWxlIhsKB3Byb2Zp
+							bGUSEHVzZXIuYXdzUHJv
+							ZmlsZT8oA0J7Cg5BV1N1
+							bWUgUHJvZmlsZRInVGhl
+							IEFXUyBwcm9maWxlIGFz
+							IGNvbmZpZ3VyZWQgYnkg
+							YXdzdW1lIg5BV1N1bWUg
+							UHJvZmlsZS0AAABAMitj
+							b20uaXJvbmhhbG8uaXRl
+							cm0tc3RhdHVzYmFyLmF3
+							c3VtZS1wcm9maWxl
+							</data>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
 						<string>iTermStatusBarWorkingDirectoryComponent</string>
 						<key>configuration</key>
 						<dict>
@@ -712,9 +758,9 @@
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.63</real>
-									<key>Red Component</key>
 									<real>0.90000000000000002</real>
+									<key>Red Component</key>
+									<real>0.84599999999999997</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -748,7 +794,7 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.7380000000000001</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
@@ -764,6 +810,97 @@
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
 							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarRPCProvidedTextComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.90000000000000002</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.73799999999999988</real>
+									<key>Red Component</key>
+									<real>0.63</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
+							</dict>
+							<key>registration request</key>
+							<data>
+							ChlrdWJlY3RsX2NvbnRl
+							eHRfY29yb3V0aW5lEgcK
+							BWtub2JzKANCmgEKD2t1
+							YmVjdGwgY29udGV4dBI3
+							VGhlIGN1cnJlbnRseSBj
+							b25maWd1cmVkIEt1YmVy
+							bmV0ZXMgY29udGV4dCBm
+							b3Iga3ViZWN0bCIW4o6I
+							IGRvY2tlci1mb3ItZGVz
+							a3RvcC0AAABAMjFlbmdp
+							bmVlcmluZy5kYW5lLml0
+							ZXJtLWNvbXBvbmVudHMu
+							a3ViZWN0bC1jb250ZXh0
+							</data>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarRPCProvidedTextComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.90000000000000002</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.8460000000000002</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
+							</dict>
+							<key>registration request</key>
+							<data>
+							Cgx0Zl93b3Jrc3BhY2US
+							BwoFa25vYnMSBQoDY3dk
+							IhAKA2N3ZBIJdXNlci5w
+							d2Q/KANCewoTdGVycmFm
+							b3JtIHdvcmtzcGFjZRIf
+							VGhlIGN1cnJlbnQgVGVy
+							cmFmb3JtIHdvcmtzcGFj
+							ZSITdGVycmFmb3JtIHdv
+							cmtzcGFjZS0AAABAMilj
+							b20uaXJvbmhhbG8uaXRl
+							cm0tc3RhdHVzYmFyLnRm
+							LXdvcmtzcGFjZQ==
+							</data>
 						</dict>
 					</dict>
 				</array>
@@ -1388,6 +1525,45 @@
 				<array>
 					<dict>
 						<key>class</key>
+						<string>iTermStatusBarRPCProvidedTextComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.63</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.90000000000000002</real>
+								</dict>
+							</dict>
+							<key>registration request</key>
+							<data>
+							Cg5hd3N1bWVfcHJvZmls
+							ZRIHCgVrbm9icxIJCgdw
+							cm9maWxlIhsKB3Byb2Zp
+							bGUSEHVzZXIuYXdzUHJv
+							ZmlsZT8oA0J7Cg5BV1N1
+							bWUgUHJvZmlsZRInVGhl
+							IEFXUyBwcm9maWxlIGFz
+							IGNvbmZpZ3VyZWQgYnkg
+							YXdzdW1lIg5BV1N1bWUg
+							UHJvZmlsZS0AAABAMitj
+							b20uaXJvbmhhbG8uaXRl
+							cm0tc3RhdHVzYmFyLmF3
+							c3VtZS1wcm9maWxl
+							</data>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
 						<string>iTermStatusBarWorkingDirectoryComponent</string>
 						<key>configuration</key>
 						<dict>
@@ -1412,9 +1588,9 @@
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.63</real>
-									<key>Red Component</key>
 									<real>0.90000000000000002</real>
+									<key>Red Component</key>
+									<real>0.84599999999999997</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1448,7 +1624,7 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.7380000000000001</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
@@ -1464,6 +1640,83 @@
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
 							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarRPCProvidedTextComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.90000000000000002</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.73799999999999988</real>
+									<key>Red Component</key>
+									<real>0.63</real>
+								</dict>
+							</dict>
+							<key>registration request</key>
+							<data>
+							ChlrdWJlY3RsX2NvbnRl
+							eHRfY29yb3V0aW5lEgcK
+							BWtub2JzKANCmgEKD2t1
+							YmVjdGwgY29udGV4dBI3
+							VGhlIGN1cnJlbnRseSBj
+							b25maWd1cmVkIEt1YmVy
+							bmV0ZXMgY29udGV4dCBm
+							b3Iga3ViZWN0bCIW4o6I
+							IGRvY2tlci1mb3ItZGVz
+							a3RvcC0AAABAMjFlbmdp
+							bmVlcmluZy5kYW5lLml0
+							ZXJtLWNvbXBvbmVudHMu
+							a3ViZWN0bC1jb250ZXh0
+							</data>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarRPCProvidedTextComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.90000000000000002</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.8460000000000002</real>
+								</dict>
+							</dict>
+							<key>registration request</key>
+							<data>
+							Cgx0Zl93b3Jrc3BhY2US
+							BwoFa25vYnMSBQoDY3dk
+							IhAKA2N3ZBIJdXNlci5w
+							d2Q/KANCewoTdGVycmFm
+							b3JtIHdvcmtzcGFjZRIf
+							VGhlIGN1cnJlbnQgVGVy
+							cmFmb3JtIHdvcmtzcGFj
+							ZSITdGVycmFmb3JtIHdv
+							cmtzcGFjZS0AAABAMilj
+							b20uaXJvbmhhbG8uaXRl
+							cm0tc3RhdHVzYmFyLnRm
+							LXdvcmtzcGFjZQ==
+							</data>
 						</dict>
 					</dict>
 				</array>
@@ -1500,43 +1753,57 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.2</string>
 		<string>3.2.9</string>
 		<string>3.3.1</string>
-		<string>3.3.0</string>
+		<string>3.3.4</string>
+		<string>3.3.7</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Andale Mono</string>
+		<string>Space Mono</string>
+		<string>PT Mono</string>
+		<string>Roboto Mono Medium for Powerline</string>
+	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{-1085, 1050}, {3840, 2160}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{196, 2786}</string>
+		<string>{537, 899}</string>
 	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{-1085, 1050}, {3840, 2160}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{244, 2453}</string>
+		<string>{524, 782}</string>
 	</dict>
-	<key>NoSyncHaveUsedCopyMode</key>
-	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>2112D08F-C030-4926-B419-13FFC6315633</string>
+	<string>4B9E2FDC-4487-4BFF-BFEC-B27C0F30F0D1</string>
+	<key>NoSyncLastTipTime</key>
+	<real>596671043.16689396</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>10</integer>
+	<integer>12</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>586794675.24130094</real>
+	<real>590642939.32083905</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
 	<key>NoSyncPermissionToShowTip</key>
-	<false/>
+	<true/>
+	<key>NoSyncPersistentRateLimitedUpdates</key>
+	<dict>
+		<key>CheckForUpdatedPythonRuntime</key>
+		<real>597023163.25435698</real>
+	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -1597,6 +1864,14 @@
 				<true/>
 				<key>name</key>
 				<string>id</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>user.awsProfile</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1762,6 +2037,14 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>user.awsume_profile</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>tab</string>
@@ -1789,6 +2072,14 @@
 				<true/>
 				<key>name</key>
 				<string>autoName</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>user.pwd</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1887,6 +2178,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.user.pwd</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.terminalWindowName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1896,6 +2195,14 @@
 				<true/>
 				<key>name</key>
 				<string>currentTab.currentSession.terminalIconName</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.lastCommand</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1951,7 +2258,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentTab.currentSession.commandLine</string>
+				<string>currentTab.currentSession.path</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1959,7 +2266,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentTab.currentSession.path</string>
+				<string>currentTab.currentSession.commandLine</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1976,6 +2283,14 @@
 				<true/>
 				<key>name</key>
 				<string>currentTab.currentSession.hostname</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.user.awsProfile</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2015,6 +2330,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.user.awsume_profile</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.jobName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -2026,7 +2349,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.commandLine</string>
+				<string>currentSession.user.awsume_profile</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2034,7 +2357,23 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.terminalIconName</string>
+				<string>currentSession.commandLine</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2050,7 +2389,23 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentSession.user.awsProfile</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentSession.presentationName</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.user.pwd</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2138,7 +2493,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.path</string>
+				<string>currentSession.termid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2170,7 +2525,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.terminalWindowName</string>
+				<string>currentSession.pid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2178,7 +2533,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.pid</string>
+				<string>currentSession.path</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2235,8 +2590,25 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncScriptNameForStatusBarComponent_com.ironhalo.iterm-statusbar.awsume-profile</key>
+	<string>/Users/pwhitehead/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/awsume-profile.py</string>
+	<key>NoSyncScriptNameForStatusBarComponent_com.ironhalo.iterm-statusbar.tf-workspace</key>
+	<string>/Users/pwhitehead/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/terraform.py</string>
+	<key>NoSyncScriptNameForStatusBarComponent_engineering.dane.iterm-components.kubectl-context</key>
+	<string>/Users/pwhitehead/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/kubernetes.py</string>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>543808746.09950101</real>
+	<real>587173134.07285905</real>
+	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
+	<real>587276354.10264802</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
@@ -2285,11 +2657,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final_new.xml?shard=42</string>
+	<string>https://iterm2.com/appcasts/final_new.xml?shard=81</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-29T16:46:17Z</date>
+	<date>2019-11-29T23:54:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2317,14 +2689,12 @@
 		<string>Profiles</string>
 		<string>Paste History</string>
 	</array>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1554133376</real>
 	<key>UseBorder</key>
 	<true/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.2</string>
+	<string>3.3.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
